@@ -1,0 +1,12 @@
+# Config local de Claude Code (permisos de la màquina)
+.claude/settings.local.json
+
+# Sortides exportades de presentacions
+presentacions/**/*.pdf
+presentacions/**/*.pptx
+presentacions/**/*.html
+
+# Sistema
+.DS_Store
+Thumbs.db
+node_modules/
