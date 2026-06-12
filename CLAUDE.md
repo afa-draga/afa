@@ -19,8 +19,9 @@ Claude Code i les presentacions.
   - **Substrat** (genèric, reutilitzable): `veu-afa` (to i llengua),
     `identitat-afa` (identitat visual).
   - **Perfils** (prims, per lliurament): `comunicat` (WhatsApp), `acta`
-    (resum de reunió per comissions), `presentacio` (Marp). Cada perfil aplica
-    el substrat i llegeix dades del web.
+    (resum de reunió per comissions), `presentacio` (Marp), `contingut-web`
+    (afegir/actualitzar contingut al web). Cada perfil aplica el substrat i
+    llegeix dades del web.
 - `presentacions/` — presentacions Marp.
 
 ## Regles del web (heretades)
