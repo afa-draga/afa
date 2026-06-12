@@ -10,7 +10,7 @@ Llegida amb el marc d'*[Under the River](https://shopify.engineering/under-the-r
 pública, que es modela a sobre).
 
 ```
-afa-draga/web/                       MONOREPO (un sol pou)
+afa-draga/afa/                       MONOREPO (un sol pou)
 │
 ├── web/                             🌊 EL RIU — superfície pública
 │   │                                  FONT DE VERITAT dels fets

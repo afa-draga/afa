@@ -6,7 +6,7 @@
 - **Públic:** Famílies de l'escola i comunitat educativa. El llenguatge ha de ser planer i entenedor, adaptat fins i tot per a infants de 6 anys.
 - **Entorns:**
   - **Producció:** https://afaladraga.cat/
-  - **Pre-producció:** http://afa-draga.github.io/web/
+  - **Pre-producció:** https://afa-draga.github.io/afa/
 
 ## 2. Stack Tecnològic i Regles Tècniques
 - **Plataforma:** GitHub Pages.
