@@ -4,6 +4,14 @@
 - **Estat:** aprovat (pendent de revisió del document)
 - **Entitat:** AFA de l'Escola La Draga (Banyoles)
 
+> **Nota (2026-06-12) — evolució del disseny.** L'arquitectura de skills va passar
+> de tres skills verticals a **dues capes**: substrat genèric (`veu-afa`,
+> `identitat-afa`) + perfils prims (`comunicat`, `acta`, `presentacio`). A més, no
+> es crea un repo nou `afa`: es reorganitza el repo existent `afa-draga/web` (web
+> a `web/`). La font de veritat de la identitat visual és `web/assets/styles.css`.
+> Vegeu `CLAUDE.md` per a l'estructura vigent; les seccions següents reflecteixen
+> el disseny original.
+
 ## 1. Objectiu
 
 Crear un únic repositori públic que reuneixi el coneixement de l'AFA i les

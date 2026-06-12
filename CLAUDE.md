@@ -8,13 +8,19 @@ Claude Code i les presentacions.
 - **Dades factuals** (qui som, comissions i qui les forma, contacte, dades
   recurrents): viuen NOMÉS al `web/`. No les dupliquis enlloc. Les skills les
   llegeixen del web.
-- **Estil i to:** viu NOMÉS a `.claude/skills/_base/to-de-veu.md`.
+- **To i llengua:** viuen NOMÉS a la skill `veu-afa`.
+- **Identitat visual:** viu NOMÉS a `web/assets/styles.css` (skill `identitat-afa`
+  hi apunta). No copiïs colors; reflecteix-los.
 
 ## Estructura
 - `web/` — web estàtic (HTML pur, Zero JS, Tailwind). Es desplega a GitHub Pages
   des d'aquesta carpeta via `.github/workflows/pages.yml`.
-- `.claude/skills/` — skills: `comunicat-socis`, `acta-reunio`, `presentacio`,
-  i la referència compartida `_base/to-de-veu.md`.
+- `.claude/skills/` — dues capes:
+  - **Substrat** (genèric, reutilitzable): `veu-afa` (to i llengua),
+    `identitat-afa` (identitat visual).
+  - **Perfils** (prims, per lliurament): `comunicat` (WhatsApp), `acta`
+    (resum de reunió per comissions), `presentacio` (Marp). Cada perfil aplica
+    el substrat i llegeix dades del web.
 - `presentacions/` — presentacions Marp.
 
 ## Regles del web (heretades)

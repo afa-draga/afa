@@ -1,5 +1,10 @@
 # Monorepo `afa` — Implementation Plan
 
+> **Nota (2026-06-12):** pla executat i després evolucionat. Les skills finals són
+> de dues capes — substrat (`veu-afa`, `identitat-afa`) + perfils prims
+> (`comunicat`, `acta`, `presentacio`) — i el repo és `afa-draga/web` reorganitzat,
+> no un repo nou. Aquest pla conserva els noms i passos originals com a registre.
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Construir un monorepo públic `afa` que reuneixi el web (font de veritat), una guia d'estil compartida i tres skills de Claude Code (comunicats, actes, presentacions) per generar comunicacions coherents de l'AFA.

@@ -1,20 +1,18 @@
 ---
 name: presentacio
-description: Usa quan calgui crear una presentació de l'AFA (per a assemblees, juntes o xerrades). Genera diapositives amb Marp i el tema visual de l'AFA.
+description: Usa quan calgui crear una presentació de l'AFA — per a assemblees, juntes o xerrades.
 ---
 
 # Crear una presentació
 
-## Quan s'usa
-Quan l'usuari vol una presentació: assemblea de famílies, reunió de junta, xerrada,
-resum de curs, etc.
+Genera presentacions amb Marp (Markdown → diapositives) amb la identitat de l'AFA.
 
 ## Procediment
-1. Llegeix la guia d'estil: `.claude/skills/_base/to-de-veu.md`. Aplica-la (poc
-   text per diapositiva, frases curtes, llenguatge planer).
-2. Llegeix del `web/` les dades que necessitis (és la font de veritat).
-3. Si falta informació, pregunta: tema, públic, durada aproximada, missatges clau.
-4. Crea un fitxer Markdown de Marp a `presentacions/[nom].md` amb aquesta capçalera:
+1. Aplica `veu-afa` (poc text per diapositiva, frases curtes, llenguatge planer).
+2. Aplica `identitat-afa` (colors i logo segons `web/assets/styles.css`).
+3. Llegeix del `web/` les dades que necessitis (font de veritat).
+4. Si falta informació, pregunta: tema, públic, durada aproximada, missatges clau.
+5. Crea un fitxer Markdown de Marp a `presentacions/[nom].md` amb aquesta capçalera:
 
    ```markdown
    ---
@@ -25,11 +23,11 @@ resum de curs, etc.
    ```
 
    El tema `afa` és a `presentacions/temes/afa.css`.
-5. Estructura recomanada: portada (classe `lead`), índex breu, una idea per
+6. Estructura recomanada: portada (classe `lead`), índex breu, una idea per
    diapositiva, diapositiva de tancament amb contacte (llegit del web).
-6. Per exportar, indica a l'usuari l'ordre (no cal executar-la si no ho demana):
+7. Per exportar, indica a l'usuari l'ordre (no cal executar-la si no ho demana):
    `npx @marp-team/marp-cli presentacions/[nom].md --theme presentacions/temes/afa.css -o presentacions/[nom].pdf`
 
 ## Recordatori
 - Poc text per diapositiva; el detall es diu de viva veu.
-- Mantén la identitat: blau corporatiu i blanc (ja al tema).
+- Mantén la identitat: blau corporatiu, groc d'accent i blanc (ja al tema).

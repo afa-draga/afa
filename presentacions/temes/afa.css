@@ -1,16 +1,20 @@
 /* @theme afa */
+/* Paleta reflectida de web/assets/styles.css (font canònica, vegeu identitat-afa) */
 @import 'default';
 
 :root {
   --afa-blau: #0056b3;
-  --afa-blau-fosc: #003d80;
-  --afa-text: #1a2733;
+  --afa-blau-fosc: #003d7a;
+  --afa-accent: #f5c842;
+  --afa-text: #14202c;
+  --afa-bg: #fbf9f4;
 }
 
 section {
   font-family: -apple-system, "Segoe UI", system-ui, sans-serif;
   font-size: 28px;
   color: var(--afa-text);
+  background: var(--afa-bg);
   padding: 60px;
 }
 
@@ -18,17 +22,29 @@ h1, h2 {
   color: var(--afa-blau);
 }
 
-section.lead h1 {
-  color: #fff;
-}
-
 section.lead {
   background: var(--afa-blau);
   color: #fff;
 }
 
+section.lead h1 {
+  color: #fff;
+}
+
 a { color: var(--afa-blau-fosc); }
 
+strong { color: var(--afa-blau-fosc); }
+
+/* Accent groc per a ressaltats i barra de pàgina */
+section.lead h1 {
+  border-bottom: 6px solid var(--afa-accent);
+  padding-bottom: 12px;
+}
+
 header, footer {
+  color: var(--afa-blau);
+}
+
+section::after {
   color: var(--afa-blau);
 }
