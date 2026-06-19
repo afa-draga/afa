@@ -5,14 +5,13 @@ reutilitzable i les skills de Claude Code per generar comunicacions coherents.
 
 ## Estructura
 
-Llegida amb el marc d'*[Under the River](https://shopify.engineering/under-the-river)*:
-**l'aqüífer** (el substrat invisible que ho sosté tot) i **el riu** (la superfície
-pública, que es modela a sobre).
+Dues capes: **el substrat** (el coneixement reutilitzable que ho sosté tot) i **el
+web públic**, que es construeix a sobre.
 
 ```
-afa-draga/afa/                       MONOREPO (un sol pou)
+afa-draga/afa/                       MONOREPO
 │
-├── web/                             🌊 EL RIU — superfície pública
+├── web/                             WEB PÚBLIC
 │   │                                  FONT DE VERITAT dels fets
 │   ├── index.html                   portada
 │   ├── afa.html                     l'AFA + actes (<ul class="acta-list">)
@@ -30,14 +29,14 @@ afa-draga/afa/                       MONOREPO (un sol pou)
 │   ├── CNAME · .nojekyll            afaladraga.cat + desplegament
 │
 ├── .claude/skills/
-│   ├── veu-afa/                     💧 AQÜÍFER — com escriu l'AFA (to, llengua)
-│   ├── identitat-afa/               💧 AQÜÍFER — identitat visual → styles.css
-│   ├── comunicat/                   🚣 PERFIL — WhatsApp a les famílies
-│   ├── acta/                        🚣 PERFIL — resum de reunió per comissions
-│   ├── presentacio/                 🚣 PERFIL — Marp (tema reflecteix styles.css)
-│   └── contingut-web/               🚣 PERFIL — afegir/editar contingut al web
+│   ├── veu-afa/                     SUBSTRAT — com escriu l'AFA (to, llengua)
+│   ├── identitat-afa/               SUBSTRAT — identitat visual → styles.css
+│   ├── comunicat/                   EINA — WhatsApp a les famílies
+│   ├── acta/                        EINA — resum de reunió per comissions
+│   ├── presentacio/                 EINA — Marp (tema reflecteix styles.css)
+│   └── contingut-web/               EINA — afegir/editar contingut al web
 │
-├── presentacions/                   sortides del perfil presentacio
+├── presentacions/                   sortides de l'eina presentacio
 │   ├── temes/afa.css                tema Marp (DERIVAT de styles.css)
 │   └── exemple.md
 │
@@ -51,9 +50,9 @@ afa-draga/afa/                       MONOREPO (un sol pou)
 - **Una sola font de veritat:** els *fets* viuen al `web/`; l'*estil i el to*, a la
   skill `veu-afa`; la *identitat visual*, a `web/assets/styles.css`. Tot el demés
   hi **apunta** — res es duplica.
-- **Substrat vs perfils:** el coneixement reutilitzable (`veu-afa`, `identitat-afa`)
-  és l'aqüífer; cada lliurament (`comunicat`, `acta`, `presentacio`, `contingut-web`)
-  és un perfil prim a sobre. Afegir un lliurament nou no toca el substrat.
+- **Substrat vs eines:** el coneixement reutilitzable (`veu-afa`, `identitat-afa`)
+  és el substrat; cada eina de lliurament (`comunicat`, `acta`, `presentacio`,
+  `contingut-web`) s'hi construeix a sobre. Afegir-ne una de nova no toca el substrat.
 - **Català, llenguatge planer.** Frases curtes i clares.
 - **Zero JS** al client del web.
 
