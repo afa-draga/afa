@@ -23,12 +23,17 @@ h1, h2 {
 }
 
 section.lead {
-  background: var(--afa-blau);
-  color: #fff;
+  background: var(--afa-bg);
 }
 
 section.lead h1 {
-  color: #fff;
+  color: var(--afa-blau);
+}
+
+section.lead h2 {
+  color: var(--afa-text);
+  opacity: 0.85;
+  font-weight: 600;
 }
 
 a { color: var(--afa-blau-fosc); }
@@ -48,3 +53,98 @@ header, footer {
 section::after {
   color: var(--afa-blau);
 }
+
+/* Utilitats per a diapositives amb més contingut ------------------------- */
+
+/* Densitat reduïda per a diapositives amb força text */
+section.dense { font-size: 23px; }
+
+/* Dues columnes */
+.cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+/* Text secundari */
+.muted { color: var(--afa-text); opacity: 0.7; font-size: 0.82em; }
+
+/* Targetes (activitats, serveis…) */
+.card {
+  background: #fff;
+  border: 1px solid #e6e2d6;
+  border-top: 4px solid var(--afa-blau);
+  border-radius: 10px;
+  padding: 16px 22px;
+}
+.card.accent { border-top-color: var(--afa-accent); }
+.card h3 { color: var(--afa-blau); margin: 0 0 6px; font-size: 1.02em; }
+.card p { margin: 5px 0; }
+.card ul { margin: 6px 0 0; }
+
+/* Ressaltat groc i etiqueta "novetat" */
+mark { background: var(--afa-accent); color: var(--afa-text); padding: 0 6px; border-radius: 4px; }
+.badge {
+  display: inline-block;
+  background: var(--afa-accent);
+  color: var(--afa-text);
+  font-size: 0.62em;
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: 999px;
+  vertical-align: middle;
+}
+
+/* Destacat (cantonada superior dreta) */
+.destacat {
+  position: absolute;
+  top: 44px;
+  right: 56px;
+  max-width: 300px;
+  background: var(--afa-accent);
+  color: var(--afa-text);
+  border-radius: 12px;
+  padding: 14px 18px;
+  font-size: 15px;
+  line-height: 1.35;
+  box-shadow: 0 4px 14px rgba(0, 40, 81, 0.15);
+}
+.destacat strong {
+  display: block;
+  color: var(--afa-blau-fosc);
+  font-size: 1.05em;
+  margin-bottom: 4px;
+}
+
+/* Quadre horari d'extraescolars (centrat) */
+.tt-wrap { display: flex; justify-content: center; margin-top: 8px; }
+table.tt {
+  border-collapse: collapse;
+  width: auto;
+  font-size: 14px;
+  text-align: left;
+}
+table.tt th, table.tt td {
+  border: 1px solid #e6e2d6;
+  padding: 5px 7px;
+  text-align: left;
+  vertical-align: top;
+}
+table.tt thead th {
+  background: var(--afa-blau);
+  color: #fff;
+  font-weight: 600;
+}
+table.tt td.h {
+  background: #e6eff8;
+  color: var(--afa-blau-fosc);
+  font-weight: 600;
+  white-space: nowrap;
+}
+table.tt td.acollida {
+  background: #fdf5d6;
+  color: var(--afa-blau-fosc);
+  font-weight: 600;
+}
+table.tt .lv { color: #4a5763; font-size: 0.84em; }
+table.tt td.x { color: #c7bfae; text-align: center; }
