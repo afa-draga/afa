@@ -6,6 +6,9 @@ presentacions/**/*.pdf
 presentacions/**/*.pptx
 presentacions/**/*.html
 
+# Fitxers de treball temporals (no es tracegen)
+temp/
+
 # Sistema
 .DS_Store
 Thumbs.db
