@@ -223,19 +223,19 @@ Grups de famílies que s'ocupen d'un àmbit concret. Trieu el que us cridi més:
 <div class="cols">
 <div class="card">
 
-* 🍽️ Menjador
-* 🎨 Extraescolars
-* 🎉 Festes
-* 🎭 Carnaval
-* 📣 Comunicació
+- 🍽️ Menjador
+- 🎨 Extraescolars
+- 🎉 Festes
+- 🎭 Carnaval
+- 📣 Comunicació
 
 </div>
 <div class="card">
 
-* 👪 Eduquem en família
-* 🌈 Coeducació i diversitat
-* 🌳 Pati
-* ⚽ Esportiva
+- 👪 Eduquem en família
+- 🌈 Coeducació i diversitat
+- 🌳 Pati
+- ⚽ Esportiva
 
 </div>
 </div>
