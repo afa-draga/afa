@@ -31,8 +31,32 @@ Genera presentacions amb Marp (Markdown → diapositives) amb la identitat de l'
 6. Estructura: portada (classe `lead`), una idea per diapositiva, tancament amb
    contacte (llegit del web). **No** posis diapositives divisòries de secció:
    el nom de la secció ja és el títol (`##`) de la seva diapositiva.
-7. Per exportar, indica a l'usuari l'ordre (no cal executar-la si no ho demana):
-   `npx @marp-team/marp-cli presentacions/[nom].md --theme presentacions/temes/afa.css --html -o presentacions/[nom].pdf`
+7. Per exportar a **PDF**, indica a l'usuari l'ordre (no cal executar-la si no ho demana):
+   `npx -y @marp-team/marp-cli@latest presentacions/[nom].md --theme presentacions/temes/afa.css --html --no-stdin -o presentacions/[nom].pdf`
+   `--no-stdin` és obligatori: sense ell, `marp-cli` es penja esperant dades de stdin.
+
+## Versió HTML navegable (per projectar i consultar al web)
+A més del PDF, el mateix `.md` es pot exportar a un deck HTML *bespoke* navegable
+(tecles ← →, `f` pantalla completa, hash `#N` a la URL, transicions i fragments).
+És una sola font: el `.md` genera PDF **i** HTML.
+
+1. **Animació al `.md`:**
+   - Transició: afegeix `transition: fade` a la capçalera (front-matter).
+   - Fragments (revelar punt a punt): fes servir `*` en comptes de `-` a les llistes.
+     ⚠️ NO fragmentis llistes que són l'únic contingut d'una `.card` amb marc → en
+     arribar es veurien quadres buits. Fragmenta només llistes amb encapçalament o
+     text sempre visible a sobre.
+2. **Config anti-CDN (autocontenció):** per defecte Marp baixa els emojis com a
+   imatges de `cdn.jsdelivr.net` (twemoji) → l'HTML no seria projectable sense
+   internet. Hi ha `presentacions/marp.config.mjs` amb `emoji: { unicode: false }`
+   que els renderitza com a unicode natiu (zero peticions de xarxa).
+3. **Generació** (l'HTML va sota `web/` perquè el desplegament només publica `web/`;
+   es committeja com a artefacte, igual que el PDF):
+   `npx -y @marp-team/marp-cli@latest -c presentacions/marp.config.mjs presentacions/[nom].md --theme presentacions/temes/afa.css --html --no-stdin -o web/presentacions/[slug].html`
+4. **Enllaç des del web:** afegeix una targeta HTML pura (Zero JS) a la pàgina
+   pertinent de `web/` que apunti a `presentacions/[slug].html`.
+
+Vegeu `presentacions/README.md` per a la comanda de regeneració concreta.
 
 ## Estil (decisions vigents)
 - **Fons sempre clars**, com el web (crema `--afa-bg`). Res de fons blaus plens;

@@ -22,10 +22,14 @@ Claude Code i les presentacions.
     (resum de reunió per comissions), `presentacio` (Marp), `contingut-web`
     (afegir/actualitzar contingut al web). Cada perfil aplica el substrat i
     llegeix dades del web.
-- `presentacions/` — presentacions Marp.
+- `presentacions/` — presentacions Marp (font `.md` + tema `temes/afa.css`). El
+  mateix `.md` exporta a PDF i, opcionalment, a un deck HTML navegable que es publica
+  sota `web/presentacions/` (vegeu la skill `presentacio` i `presentacions/README.md`).
 
 ## Regles del web (heretades)
-- Zero JS al client.
+- Zero JS al client a les pàgines institucionals (`web/*.html` de l'arrel).
+  **Excepció:** els decks HTML generats a `web/presentacions/` són artefactes de Marp
+  i sí que porten JS de navegació; no compten com a pàgines del web institucional.
 - Nomenclatura de fitxers a `web/fitxers/`: `YYYYMMDD_titol-del-fitxer.pdf`.
 - Actes noves: afegir al capdamunt de la llista `<ul class="acta-list">` de `web/afa.html` (ordre cronològic invers).
 

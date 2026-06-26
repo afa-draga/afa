@@ -25,6 +25,7 @@ afa-draga/afa/                       MONOREPO
 │   ├── fitxers/
 │   │   ├── actes/                   YYYYMMDD_*.pdf
 │   │   └── menjador/                YYYYMMDD_*.pdf
+│   ├── presentacions/               decks HTML navegables (artefactes Marp)
 │   ├── CLAUDE.md                    regles del web (Zero JS, semàntica…)
 │   ├── CNAME · .nojekyll            afaladraga.cat + desplegament
 │
@@ -36,8 +37,10 @@ afa-draga/afa/                       MONOREPO
 │   ├── presentacio/                 EINA — Marp (tema reflecteix styles.css)
 │   └── contingut-web/               EINA — afegir/editar contingut al web
 │
-├── presentacions/                   sortides de l'eina presentacio
+├── presentacions/                   fonts .md de l'eina presentacio
 │   ├── temes/afa.css                tema Marp (DERIVAT de styles.css)
+│   ├── marp.config.mjs              config Marp (emojis natius, sense CDN)
+│   ├── README.md                    com regenerar el deck HTML
 │   └── exemple.md
 │
 ├── .github/workflows/pages.yml      desplega només web/ (push a master)
@@ -54,7 +57,8 @@ afa-draga/afa/                       MONOREPO
   és el substrat; cada eina de lliurament (`comunicat`, `acta`, `presentacio`,
   `contingut-web`) s'hi construeix a sobre. Afegir-ne una de nova no toca el substrat.
 - **Català, llenguatge planer.** Frases curtes i clares.
-- **Zero JS** al client del web.
+- **Zero JS** al client del web institucional. Excepció: els decks HTML a
+  `web/presentacions/` són artefactes de Marp i porten JS de navegació.
 
 ## Com s'usa
 
