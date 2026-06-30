@@ -29,4 +29,5 @@ npx -y @marp-team/marp-cli@latest -c presentacions/marp.config.mjs presentacions
 ## Animació
 
 - `transition: fade` al front-matter: transició suau entre diapositives.
-- Llistes amb `*` (en comptes de `-`): es revelen punt a punt (fragments).
+- **Tot el contingut apareix de cop:** les llistes de punts usen sempre `-`.
+  (Marp revela punt a punt si la llista usa `*`; evita-ho.)

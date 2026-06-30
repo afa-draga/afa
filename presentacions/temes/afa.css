@@ -69,6 +69,15 @@ section.dense { font-size: 23px; }
 /* Text secundari */
 .muted { color: var(--afa-text); opacity: 0.7; font-size: 0.82em; }
 
+/* Cloenda revelable: la nota final apareix com a 2n pas (fragment d'un sol ítem),
+   sense pic ni indentació de llista perquè es vegi com un paràgraf. */
+section > ul:has(> li[data-marpit-fragment]:only-child) {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 18px;
+}
+section > ul:has(> li[data-marpit-fragment]:only-child) > li > p { margin: 0; }
+
 /* Targetes (activitats, serveis…) */
 .card {
   background: #fff;
