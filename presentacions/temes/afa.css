@@ -109,7 +109,7 @@ mark { background: var(--afa-accent); color: var(--afa-text); padding: 0 6px; bo
   position: absolute;
   top: 44px;
   right: 56px;
-  max-width: 300px;
+  white-space: nowrap;
   background: var(--afa-accent);
   color: var(--afa-text);
   border-radius: 12px;

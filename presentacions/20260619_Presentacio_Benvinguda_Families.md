@@ -154,8 +154,7 @@ La roba de l'escola.
 
 <div class="destacat">
 <strong>🎪 Mostra d'extraescolars</strong>
-Dijous 18 de setembre · 16:30 h
-al pati de l'escola
+Divendres 18 de setembre · 16:30 h al pati
 </div>
 
 <div class="tt-wrap">

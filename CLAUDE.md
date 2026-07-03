@@ -35,3 +35,10 @@ Claude Code i les presentacions.
 
 ## Redacció
 - Català, frases curtes i clares, llenguatge planer (accessible per a infants).
+
+## Control de qualitat abans de fer push
+- Revisa sempre l'ortografia i la gramàtica de tots els textos tocats abans de
+  fer push.
+- Si hi ha alguna data (dia de la setmana + data), valida-la contra un calendari
+  real (no la donis per bona a ull). Comprova que el dia de la setmana i la data
+  coincideixin realment.
