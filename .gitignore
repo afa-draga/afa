@@ -6,6 +6,10 @@ presentacions/**/*.pdf
 presentacions/**/*.pptx
 presentacions/**/*.html
 
+# Bústia d'entrada de fitxers nous (menús, actes, formularis...) — mai es puja
+tmp/*
+!tmp/.gitkeep
+
 # Fitxers de treball temporals (no es tracegen)
 temp/
 

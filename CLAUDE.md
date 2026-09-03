@@ -25,6 +25,11 @@ Claude Code i les presentacions.
 - `presentacions/` — presentacions Marp (font `.md` + tema `temes/afa.css`). El
   mateix `.md` exporta a PDF i, opcionalment, a un deck HTML navegable que es publica
   sota `web/presentacions/` (vegeu la skill `presentacio` i `presentacions/README.md`).
+- `tmp/` — bústia d'entrada per passar fitxers nous (menús, fitxes d'inscripció,
+  actes...) a Claude Code. La carpeta és permanent i es queda buida entre sessions
+  (gitignored, `git status` no l'ha de mostrar mai amb contingut): un cop
+  processats i copiats al lloc definitiu (normalment `web/fitxers/`), esborra'n
+  el contingut en tancar la sessió, però no la carpeta.
 
 ## Regles del web (heretades)
 - Zero JS al client a les pàgines institucionals (`web/*.html` de l'arrel).
