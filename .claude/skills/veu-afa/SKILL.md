@@ -22,6 +22,14 @@ comunicació (`comunicat`, `acta`, `presentacio`) la llegeixen i l'apliquen.
 - La **formalitat es regula a cada perfil**: un comunicat de WhatsApp és més
   comunitari; una acta és més formal i institucional.
 
+## Destinatari
+- Ens dirigim sempre a les **famílies**, no a una persona sola. Fem servir la
+  segona persona del plural ("sou", "podeu", "escriviu-nos") i, si cal, "les
+  famílies" o "tothom".
+- Evita adreçar-te a "pares i mares", "tu" o "estimat/da". Evita també el
+  singular ("fes-te soci/a", "escriu-me").
+- Parlem com a AFA: primera persona del plural ("us esperem", "escriviu-nos").
+
 ## Sempre
 - Digues primer el més important: què passa i què cal fer.
 - Concreta dates, hores i llocs sense ambigüitat.
