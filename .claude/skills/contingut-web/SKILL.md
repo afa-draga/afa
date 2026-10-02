@@ -33,6 +33,21 @@ estructura nova, es **reflecteix** la que ja hi ha.
 - **Document nou (menú, normativa…):** anomena'l `YYYYMMDD_*.pdf`, desa'l a la
   carpeta de `web/fitxers/` corresponent i afegeix l'enllaç al capdamunt de la
   llista pertinent (ordre cronològic invers).
+- **Actualitzar menjador (menús del mes):** les tres targetes de «Menús del mes» de
+  `web/menjador.html` són **basal**, **dietes** i **sopars**, cadascuna amb el seu
+  PDF `YYYYMMDD_basal.pdf`, `YYYYMMDD_dietes.pdf` i `YYYYMMDD_sopars.pdf`. Actualitza
+  també el mes als títols de les targetes. Abans de publicar:
+  - **Comprova si basal i dietes vénen en un sol fitxer.** Mira la pàgina 1 i la
+    pàgina 2 del PDF. Si el basal és la pàgina 1 del fitxer de dietes, **separa'l**:
+    el basal és un fitxer propi d'**una sola pàgina** i el fitxer de dietes ha de
+    contenir **només les dietes** (sense la pàgina del basal). Comprova que el
+    basal és realment una sola pàgina (la pàgina 2 ha de començar una dieta).
+  - **Els sopars solen venir ja en un sol fitxer**: no cal separar-los.
+  - Comprova que el dia de la setmana i la data del primer dia del mes coincideixen
+    amb un calendari real.
+- **Tancament després de publicar menús:** un cop fets el commit i el push,
+  **pregunta sempre** a l'usuari si s'han d'esborrar de `tmp/` els fitxers
+  originals dels menús. No els esborris sense la seva confirmació.
 - **Actes de reunió:** usa la skill `acta` (ja cobreix el flux complet).
 
 ## Verificació
