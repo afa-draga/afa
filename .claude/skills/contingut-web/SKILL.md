@@ -45,6 +45,7 @@ estructura nova, es **reflecteix** la que ja hi ha.
   - **Els sopars solen venir ja en un sol fitxer**: no cal separar-los.
   - Comprova que el dia de la setmana i la data del primer dia del mes coincideixen
     amb un calendari real.
+  - Si no és final de mes, deixa els menus del mes anterior i no proposis de borrar-los fins que no s'hagi acabat el mes en qüestió. Si és final de mes, proposa de borrar els menús antics.
 - **Tancament després de publicar menús:** un cop fets el commit i el push,
   **pregunta sempre** a l'usuari si s'han d'esborrar de `tmp/` els fitxers
   originals dels menús. No els esborris sense la seva confirmació.
