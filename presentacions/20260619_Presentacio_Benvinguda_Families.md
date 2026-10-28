@@ -136,7 +136,7 @@ La roba de l'escola.
 
 ### 💶 Preus
 **7,55 €**/àpat fix
-**8,42 €**/àpat esporàdic
+**8,30 €**/àpat esporàdic
 
 </div>
 </div>
