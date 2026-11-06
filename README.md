@@ -1,7 +1,7 @@
 # AFA Escola La Draga — coneixement i eines
 
 Monorepo de l'AFA de l'Escola La Draga (Banyoles): el web públic, el coneixement
-reutilitzable i les skills de Claude Code per generar comunicacions coherents.
+reutilitzable i les skills d'agent per generar comunicacions coherents.
 
 ## Estructura
 
@@ -45,7 +45,7 @@ afa-draga/afa/                       MONOREPO
 │
 ├── .github/workflows/pages.yml      desplega només web/ (push a master)
 ├── docs/superpowers/                disseny i pla (registre)
-├── CLAUDE.md · README.md · .gitignore
+├── AGENTS.md · README.md · .gitignore
 ```
 
 ## Principis
@@ -62,5 +62,5 @@ afa-draga/afa/                       MONOREPO
 
 ## Com s'usa
 
-Obre aquest repo amb Claude Code i demana, per exemple, "redacta un comunicat per
+Obre aquest repo amb el teu agent de codi i demana, per exemple, "redacta un comunicat per
 a les famílies sobre…" o "fes un resum d'aquesta acta". Les skills s'activen soles.

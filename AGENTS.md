@@ -1,8 +1,7 @@
 # Context del projecte: monorepo AFA Escola La Draga
 
 ## Què és això
-Repositori únic de l'AFA de l'Escola La Draga (Banyoles) amb el web, les skills de
-Claude Code i les presentacions.
+Repositori únic de l'AFA de l'Escola La Draga (Banyoles) amb el web, les skills d'agent i les presentacions.
 
 ## Regla d'or: una sola font de veritat
 - **Dades factuals** (qui som, comissions i qui les forma, contacte, dades
@@ -26,7 +25,7 @@ Claude Code i les presentacions.
   mateix `.md` exporta a PDF i, opcionalment, a un deck HTML navegable que es publica
   sota `web/presentacions/` (vegeu la skill `presentacio` i `presentacions/README.md`).
 - `tmp/` — bústia d'entrada per passar fitxers nous (menús, fitxes d'inscripció,
-  actes...) a Claude Code. La carpeta és permanent i es queda buida entre sessions
+  actes...) a l'agent. La carpeta és permanent i es queda buida entre sessions
   (gitignored, `git status` no l'ha de mostrar mai amb contingut): un cop
   processats i copiats al lloc definitiu (normalment `web/fitxers/`), esborra'n
   el contingut en tancar la sessió, però no la carpeta.
