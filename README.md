@@ -44,7 +44,6 @@ afa-draga/afa/                       MONOREPO
 │   └── exemple.md
 │
 ├── .github/workflows/pages.yml      desplega només web/ (push a master)
-├── docs/superpowers/                disseny i pla (registre)
 ├── AGENTS.md · README.md · .gitignore
 ```
 
